@@ -1,0 +1,6 @@
+framework module Pods_JenkinsFastlaneTests {
+  umbrella header "Pods-JenkinsFastlaneTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
