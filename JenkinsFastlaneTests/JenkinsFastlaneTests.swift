@@ -21,16 +21,23 @@ class JenkinsFastlaneTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
+    func testAddition() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+        let res = Utility.sharedInstance.add(number1: 8, number2: 5)
+        XCTAssertEqual(res, 13, "Addition result is wrong")
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func testSubstraction() {
+        let res = Utility.sharedInstance.sub(number1: 13, number2: 5)
+        XCTAssertEqual(res, 8, "Substraction result is wrong")
     }
     
+//    func testPerformanceExample() {
+//        // This is an example of a performance test case.
+//        self.measure {
+//            // Put the code you want to measure the time of here.
+//        }
+//    }
 }
