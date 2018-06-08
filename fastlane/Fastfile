@@ -27,11 +27,14 @@ platform :ios do
   end
 
   lane :beta do
-  	increment_build_number(
-  		build_number: latest_testflight_build_number + 1,
-  		xcodeproj: "JenkinsFastlane.xcodeproj"
-  	)
-  	build_app(scheme: "JenkinsFastlane")
+  	# increment_build_number(
+  	# 	build_number: latest_testflight_build_number + 1,
+  	# 	xcodeproj: "JenkinsFastlane.xcodeproj"
+  	# )
+  	# build_app(scheme: "JenkinsFastlane",
+  	# 		include_bitcode: true)
+  	upload_to_testflight
+  	slack(message: "Successfully upload new build to TestFlight")
   end
 
 end
