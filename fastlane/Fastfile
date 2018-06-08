@@ -16,11 +16,22 @@
 default_platform(:ios)
 
 platform :ios do
-  desc "Test the app"
+
+  desc "Lanes for iOS app"
+
   lane :tests do
     # add actions here: https://docs.fastlane.tools/actions
     run_tests(scheme: "JenkinsFastlane",
     	devices: "iPhone 6s",
     	slack_url: "https://hooks.slack.com/services/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")
   end
+
+  lane :beta do
+  	increment_build_number(
+  		build_number: latest_testflight_build_number + 1,
+  		xcodeproj: "JenkinsFastlane.xcodeproj"
+  	)
+  	build_app(scheme: "JenkinsFastlane")
+  end
+
 end

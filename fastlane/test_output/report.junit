@@ -1,7 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<testsuites name='JenkinsFastlaneUITests.xctest' tests='2' failures='0'>
-  <testsuite name='JenkinsFastlaneTests.JenkinsFastlaneTests' tests='2' failures='0'>
-    <testcase classname='JenkinsFastlaneTests.JenkinsFastlaneTests' name='testAddition' time='0.001'/>
+<testsuites name='JenkinsFastlaneUITests.xctest' tests='2' failures='1'>
+  <testsuite name='JenkinsFastlaneTests.JenkinsFastlaneTests' tests='2' failures='1'>
+    <testcase classname='JenkinsFastlaneTests.JenkinsFastlaneTests' name='testAddition'>
+      <failure message='XCTAssertEqual failed: (&quot;13&quot;) is not equal to (&quot;12&quot;) - Addition result is wrong'>JenkinsFastlaneTests/JenkinsFastlaneTests.swift:29</failure>
+    </testcase>
     <testcase classname='JenkinsFastlaneTests.JenkinsFastlaneTests' name='testSubstraction' time='0.000'/>
   </testsuite>
 </testsuites>

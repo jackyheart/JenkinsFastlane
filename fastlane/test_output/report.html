@@ -112,6 +112,8 @@
         <section id="counters">
           <h2 id="test-count"><span class="number">2</span> tests</h2>
           
+            <h2 id="fail-count"><span class="number">1</span> failures</h2>
+          
         </section>
         <section id="segment-bar">
           <a id="all-segment" onclick="selectSegment(this);" class="selected">All</a><a id="failing-segment" onclick="selectSegment(this);">Failing</a><a id="passing-segment" onclick="selectSegment(this);">Passing</a>
@@ -121,7 +123,7 @@
     <section id="test-suites">
       
         
-        <section class="test-suite passing" id="JenkinsFastlaneTests.JenkinsFastlaneTests">
+        <section class="test-suite failing" id="JenkinsFastlaneTests.JenkinsFastlaneTests">
           <section class="heading" onclick="toggleTests(this);">
             <h3 class="title">JenkinsFastlaneTests.JenkinsFastlaneTests</h3>
           </section>
@@ -129,14 +131,29 @@
             <table>
             
               
-              <tr class="test passing "  onclick="toggleDetails('testAddition');">
+              <tr class="test failing "  onclick="toggleDetails('testAddition');">
                 <td>
-                  
-                    <h3 class="time">0.001s</h3>
                   
                 </td>
                 <td><h3 class="title">testAddition</h3></td>
               </tr>
+              
+                <tr class="details failing testAddition">
+                  <td></td>
+                  <td>
+                    
+                      <section class="test-detail reason">XCTAssertEqual failed: ("13") is not equal to ("12") - Addition result is wrong</section>
+                    
+                    
+                      <section class="test-detail snippet">        <span class="k">let</span> <span class="nv">res</span> <span class="o">=</span> <span class="kt">Utility</span><span class="o">.</span><span class="n">sharedInstance</span><span class="o">.</span><span class="nf">add</span><span class="p">(</span><span class="nv">number1</span><span class="p">:</span> <span class="mi">8</span><span class="p">,</span> <span class="nv">number2</span><span class="p">:</span> <span class="mi">5</span><span class="p">)</span>
+        <span class="kt">XCTAssertEqual</span><span class="p">(</span><span class="n">res</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="s">"Addition result is wrong"</span><span class="p">)</span>
+    <span class="p">}</span>
+</section>
+                      <section class="test-detail">/Users/PIXERF_SG_WS_12/Projects/XCodeProjects/Others/JenkinsFastlane/JenkinsFastlaneTests/JenkinsFastlaneTests.swift:29</section>
+                    
+                    
+                  </td>
+                </tr>
               
             
               
