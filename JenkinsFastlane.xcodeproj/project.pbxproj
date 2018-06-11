@@ -60,6 +60,7 @@
 		6F2B9A69F8330D4599860B00 /* Pods-JenkinsFastlane.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JenkinsFastlane.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JenkinsFastlane/Pods-JenkinsFastlane.debug.xcconfig"; sourceTree = "<group>"; };
 		78B49A0C248331F2C681F174 /* Pods-JenkinsFastlane.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JenkinsFastlane.release.xcconfig"; path = "Pods/Target Support Files/Pods-JenkinsFastlane/Pods-JenkinsFastlane.release.xcconfig"; sourceTree = "<group>"; };
 		7DF939FD453DBD21F5340765 /* Pods-JenkinsFastlaneUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JenkinsFastlaneUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JenkinsFastlaneUITests/Pods-JenkinsFastlaneUITests.release.xcconfig"; sourceTree = "<group>"; };
+		842AD41F20CE661B008B0F77 /* JenkinsFastlane.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JenkinsFastlane.entitlements; sourceTree = "<group>"; };
 		C8BD13D6D7AA7A8813D81AD5 /* Pods_JenkinsFastlaneUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JenkinsFastlaneUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -116,6 +117,7 @@
 		686EE65020C798ED00D3D1BE /* JenkinsFastlane */ = {
 			isa = PBXGroup;
 			children = (
+				842AD41F20CE661B008B0F77 /* JenkinsFastlane.entitlements */,
 				686EE65120C798ED00D3D1BE /* AppDelegate.swift */,
 				686EE65320C798ED00D3D1BE /* ViewController.swift */,
 				68C812B520C8F1D200CE2270 /* Utility.swift */,
