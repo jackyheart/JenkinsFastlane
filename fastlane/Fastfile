@@ -26,13 +26,18 @@ platform :ios do
     	slack_url: "https://hooks.slack.com/services/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")
   end
 
+  lane :build do
+  	build_app(scheme: "JenkinsFastlane",
+  			include_bitcode: true)
+  end
+
   lane :beta do
-  	# increment_build_number(
-  	# 	build_number: latest_testflight_build_number + 1,
-  	# 	xcodeproj: "JenkinsFastlane.xcodeproj"
-  	# )
-  	# build_app(scheme: "JenkinsFastlane",
-  	# 		include_bitcode: true)
+  	increment_build_number(
+  		build_number: latest_testflight_build_number + 1,
+  		xcodeproj: "JenkinsFastlane.xcodeproj"
+  	)
+  	build_app(scheme: "JenkinsFastlane",
+  			include_bitcode: true)
   	upload_to_testflight
   	slack(message: "Successfully upload new build to TestFlight")
   end
