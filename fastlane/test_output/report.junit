@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<testsuites name='JenkinsFastlaneTests.xctest' tests='2' failures='0'>
+<testsuites name='JenkinsFastlaneUITests.xctest' tests='2' failures='0'>
   <testsuite name='JenkinsFastlaneTests.JenkinsFastlaneTests' tests='2' failures='0'>
-    <testcase classname='JenkinsFastlaneTests.JenkinsFastlaneTests' name='testAddition' time='0.207'/>
-    <testcase classname='JenkinsFastlaneTests.JenkinsFastlaneTests' name='testSubstraction' time='0.001'/>
+    <testcase classname='JenkinsFastlaneTests.JenkinsFastlaneTests' name='testAddition' time='0.001'/>
+    <testcase classname='JenkinsFastlaneTests.JenkinsFastlaneTests' name='testSubstraction' time='0.000'/>
   </testsuite>
 </testsuites>
